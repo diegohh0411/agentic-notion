@@ -1,14 +1,16 @@
 {
   "name": "agentic-notion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Notion MCP server — lets teammates access a shared Notion workspace via personal integration tokens",
   "type": "module",
   "bin": {
-    "agentic-notion": "./dist/index.js"
+    "agentic-notion": "dist/index.js"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && chmod +x dist/index.js",
     "test": "vitest run",
     "prepublishOnly": "npm run build && npm test"
   },

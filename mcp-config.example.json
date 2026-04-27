@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "notion": {
+      "command": "npx",
+      "args": ["agentic-notion"],
+      "env": {
+        "NOTION_API_KEY": "secret_REPLACE_WITH_YOUR_TOKEN"
+      }
+    }
+  }
+}
